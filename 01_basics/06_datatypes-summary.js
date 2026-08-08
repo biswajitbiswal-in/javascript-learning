@@ -3,7 +3,7 @@
 const score = 100
 const scoreValue = 187.9
 
-const isLoggedIn = false
+const isLoggedIn = true
 const outsideTemp = null
 let userEmail;
 
