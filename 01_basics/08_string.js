@@ -18,7 +18,7 @@ console.log(gameName.length)//3
 console.log(gameName.toLowerCase())//gta
 console.log(gameName.toUpperCase())//GTA
 console.log(gameName.indexOf('T'))//1
-console.log(gameName.charAt(1))//T
+console.log(gameName.charAt(1))//T 
 
 
 const newString = gameName.substring(0,2)//substring(startIndex,endIndex) it will return the string from startIndex to endIndex-1
