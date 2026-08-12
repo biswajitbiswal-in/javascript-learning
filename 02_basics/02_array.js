@@ -17,7 +17,7 @@ console.log(usableArray);
 
 console.log(Array.isArray("Rahul"));
 console.log(Array.from("Rahul"))
-console.log(Array.from({name:"rahul"}))//intresting
+console.log(Array.from({name:"rahul"}))//intresting//output:object
 
 let score1 = 100
 let score2 = 200
