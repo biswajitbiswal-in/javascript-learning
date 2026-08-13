@@ -271,4 +271,4 @@ Object Destructuring
 
 ---
 
-*Notes by Biswajit Biswal · JavaScript Learning Journey · 2025*
+*Notes by Biswajit Biswal · JavaScript Learning Journey · 2026*
