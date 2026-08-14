@@ -21,8 +21,13 @@ console.log(Math.floor(Date.now()/1000));
 let newDate = new Date()
 console.log(newDate.getMonth()+1);
 
-
-newDate.toLocaleString('default',{
+// Converts the date into a readable format
+// 'default' → uses the system's default locale
+// day: "numeric" → displays the day as a number (e.g., 14)
+// weekday: "long" → displays the full weekday name (e.g., Friday)
+console.log(newDate.toLocaleString('en-IN',{
     day:"numeric",
-    weekday:"long"
-})
+    weekday:"long",
+
+
+}))
