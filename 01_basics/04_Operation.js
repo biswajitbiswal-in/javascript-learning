@@ -37,3 +37,7 @@ num1 = num2 = num3 = 3+3
 let gameCounter = 200
 gameCounter++
 console.log(gameCounter)
+
+
+
+
