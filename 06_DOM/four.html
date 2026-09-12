@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style ="background-color:#212121;color:whitesmoke">
+    
+    <ul class="ul">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName){
+        const li= document.createElement("li")
+        li.innerHTML=`${langName}`
+        document.querySelector(".ul").appendChild(li)
+
+    }
+    addLang("Python")
+    addLang("C++")
+
+    //optimized version of addLang function
+  
+const addOptiLang =(langName)=>{
+    const li = document.createElement("li")
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector(".ul").appendChild(li)
+}
+addOptiLang("Java")
+
+//Edit
+const secondLang = document.querySelector("Li:nth-child(3)")
+//secondLang.innerHTML = "DOCKER"")
+
+const newLi=document.createElement("li");
+newLi.textContent = "DOCKER";
+secondLang.replaceWith(newLi)
+
+//edit
+
+const secondLang2 = document.querySelector("Li:first-child")
+secondLang2.outerHTML = "<li>SOME</li>"
+
+
+//remove
+document.querySelector("li:last-child").remove()
+    
+</script>
+</html>
+>
