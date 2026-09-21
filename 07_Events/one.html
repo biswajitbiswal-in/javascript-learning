@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color: #414141;"">
+    <h2 style = "color: aliceblue;">Dream Gallery</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="g-wagon" src="https://w0.peakpx.com/wallpaper/220/543/HD-wallpaper-mercedes-g-wagon-autos-car-class-cr-g-wagon-luxury-mercedes-off-road-sport-suv.jpg" alt="photoshop"></li>
+            <li><img width="200px" height="250px" id="lambo-urus" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKEnMAaB1friWTGGsuBZ6rPFcoqWXn_affO4mfH2lRsCcbPUQPoyuMHJk&s=10" alt="photoshop"></li>
+            <li><img width="200px"height="320px" id="z900" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAwjEXrsaJzek4kYp2CthlJp2zWIMtkHS72lMPx7okQ&s" alt="photoshop"></li>
+            <li><img width="200px" id="Bmw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfl8FYGJ0fpzhEbQHflIuvVGmxiFAvePYDEYU1y8-y9psZct9H3iEYFn8&s=10" alt="photoshop"></li>
+            <li><img width="200px" id="pc-setup" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxlLz1a9DqLARW0SaAD0-mYNL3rsZjkA6Dr2XCJHLzw&s=10" alt="photoshop"></li>
+            <a href="http://google.com" style="color: aquamarine;" id ="google">Hunt in Google</a>
+            
+        </ul>
+      
+    </div>
+</body>
+<script>
+      //attachEvent()
+    //j-Query on
+
+    //types,timestamp,defaultPrevented,
+    //target,toElement,srcElement,currentTarget
+    //clientx,clienty,screenx,screeny
+    //altKey,ctrlKey,shiftKey,keyCode
+
+
+  //  document.getElementById('lambo-urus').onclick=function(){
+    //    alert("This is yous urus")
+    //}
+
+
+
+  //  document.getElementById('lambo-urus').addEventListener('click',(e)=>{
+    //    //alert("This is your urus")
+      //  console.log(e)
+    //},false)
+
+  //document.getElementById('images').addEventListener('click',(e)=>{
+    //console.log("clicked inside the ul")
+  //})
+ // document.getElementById('lambo-urus').addEventListener('click',(e)=>{
+    //console.log("clicked inside the lambo")
+  //  e.stopPropagation()
+//  })//bubbling upp or capturing
+
+//document.getElementById('google').addEventListener('click',(e)=>{
+    //console.log("Google clicked")
+    //e.preventDefault();
+  //  e.stopPropagation();
+//},false)
+
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.parentNode);
+   
+    // removeIt.remove()
+    if(e.target.tagName === 'IMG'){
+    let removeIt = e.target.parentNode
+
+    removeIt.parentNode.removeChild(removeIt)
+    }
+})
+</script>
+</html>
